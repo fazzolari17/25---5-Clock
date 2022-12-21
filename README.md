@@ -1,3 +1,7 @@
+This project was created to satisfy FreeCodeCamp's challenge for front end development libraries certification. In order to satisfy the test suite certain constraints needed to be followed. It was built in a similiar manner to TDD (test driven development). The app was built to pass the tests! 
+
+At the moment this is not 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

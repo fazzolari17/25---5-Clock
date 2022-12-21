@@ -1,38 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Righteous&family=Share+Tech+Mono&display=swap');
+
+
+/* font-family: 'Lora', serif;
+font-family: 'Righteous', cursive;
+font-family: 'Share Tech Mono', monospace; */
+/* * {
+  font-family: 'Share Tech Mono', monospace;
+} */
+
+body {
+    background: #1e555c;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Lora', serif;
+}
+
 .App {
-  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mainTitle {
+  font-size: 3.125rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn-level {
+  background: #1e555c;
+  border: none;
+  color: white;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.controls-container {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.length-control {
+  font-weight: 700;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.timer-control-container {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.timer-container {
+  border: 7px solid #13353a;
+  margin: 20px auto 10px auto;
+  width: 270px;
+  height: 160px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  font-family: 'Share Tech Mono', monospace;
+}
+@media only screen and (max-width: 500px) {
+  .timer-control-container {
+    height: 200px;
+    flex-direction: column;
+    justify-content: space-around;
   }
-  to {
-    transform: rotate(360deg);
+
+  .footer{
+    font-size: 1.25rem;
   }
 }
